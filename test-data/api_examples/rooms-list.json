@@ -1,0 +1,23 @@
+{
+  "total": 124,
+  "limit": 50,
+  "offset": 0,
+  "rooms": [
+    {
+      "id": "A244",
+      "block": "A",
+      "floor": 2,
+      "number": 44,
+      "free_now": true,
+      "next_busy_until": null
+    },
+    {
+      "id": "B101",
+      "block": "B",
+      "floor": 1,
+      "number": 1,
+      "free_now": false,
+      "next_busy_until": "2025-10-31T12:30:00+01:00"
+    }
+  ]
+}

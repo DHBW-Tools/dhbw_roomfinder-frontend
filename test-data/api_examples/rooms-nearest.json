@@ -1,0 +1,7 @@
+{
+  "source": "A244",
+  "rooms": [
+    { "id": "A246", "distance": 20, "free_now": true },
+    { "id": "A245", "distance": 35, "free_now": false }
+  ]
+}

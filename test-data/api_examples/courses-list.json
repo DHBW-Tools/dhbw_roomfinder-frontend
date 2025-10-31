@@ -1,0 +1,10 @@
+{
+  "total": 3,
+  "limit": 50,
+  "offset": 0,
+  "courses": [
+    { "id": "KA001", "name": "Mathematics I" },
+    { "id": "CS101", "name": "Algorithms" },
+    { "id": "PH201", "name": "Physics" }
+  ]
+}

@@ -1,14 +1,8 @@
-import { Item } from "@/components/ui/item";
-import Room from "@/components/custom/room";
-import Image from "next/image";
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return (
-    <div className="w-full flex items-center justify-center h-screen">
-      <Item>
-        <Room name="A265" status="free"></Room>
-        <Room name="A266" status="reserved"></Room>
-      </Item>
-    </div>
-  );
+  // Default landing: go straight to a nearby page for a sensible default room.
+  // This keeps the app starting on the Nearby page as requested.
+  redirect("/nearby");
 }
+// Root now redirects to the Nearby page for a default room so the app starts there.
