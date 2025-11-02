@@ -56,29 +56,29 @@ const server = http.createServer(async (req, res) => {
 
   // /metrics
   if (parsed.pathname === "/metrics" && req.method === "GET") {
-    return serveFile(res, "metrics.json", "application/json");
+    return serveFile(res, "system/metrics.json", "application/json");
   }
 
   // GET /api/v1/rooms
   if (parsed.pathname === "/api/v1/rooms" && req.method === "GET") {
-    return serveFile(res, "rooms-list.json", "application/json");
+    return serveFile(res, "rooms/rooms-list.json", "application/json");
   }
 
   // GET /api/v1/courses
   if (parsed.pathname === "/api/v1/courses" && req.method === "GET") {
-    return serveFile(res, "courses-list.json", "application/json");
+    return serveFile(res, "courses/courses-list.json", "application/json");
   }
 
   // GET /api/v1/status
   if (parsed.pathname === "/api/v1/status" && req.method === "GET") {
-    return serveFile(res, "status.json", "application/json");
+    return serveFile(res, "system/status.json", "application/json");
   }
 
   // POST /api/v1/refresh
   if (parsed.pathname === "/api/v1/refresh" && req.method === "POST") {
     // read body but ignore content; respond with refresh-response.json and 202
     await parseBody(req);
-    const p = path.join(DATA_DIR, "refresh-response.json");
+    const p = path.join(DATA_DIR, "system/refresh-response.json");
     try {
       const buf = await fs.readFile(p);
       res.writeHead(202, { "Content-Type": "application/json" });
@@ -99,7 +99,7 @@ const server = http.createServer(async (req, res) => {
         const query = parsed.query || {};
         const src = String(query.room || "").toUpperCase();
         const limit = Math.min(100, parseInt(query.limit || "10", 10) || 10);
-        const all = await readJSON("rooms-list.json");
+        const all = await readJSON("rooms/rooms-list.json");
         const rooms = all && Array.isArray(all.rooms) ? all.rooms : [];
 
         // helper to compute a simple proximity score
@@ -150,26 +150,26 @@ const server = http.createServer(async (req, res) => {
         return;
       } catch {
         // fallback to static file
-        return serveFile(res, "rooms-nearest.json", "application/json");
+        return serveFile(res, "rooms/rooms-nearest.json", "application/json");
       }
     }
 
     // /api/v1/rooms/:roomId/calendar.ics
     const maybeId = parts[3];
     if (maybeId && parts[4] === "calendar.ics" && req.method === "GET") {
-      const file = `room-${maybeId}-calendar.ics`;
+      const file = `rooms/room-${maybeId}-calendar.ics`;
       return serveFile(res, file, "text/calendar");
     }
 
     // /api/v1/rooms/:roomId/free
     if (maybeId && parts[4] === "free" && req.method === "GET") {
-      const file = `room-${maybeId}-free.json`;
+      const file = `rooms/room-${maybeId}-free.json`;
       return serveFile(res, file, "application/json");
     }
 
     // /api/v1/rooms/:roomId
     if (maybeId && req.method === "GET" && parts.length === 4) {
-      const file = `room-${maybeId}.json`;
+      const file = `rooms/room-${maybeId}.json`;
       return serveFile(res, file, "application/json");
     }
   }
@@ -183,7 +183,7 @@ const server = http.createServer(async (req, res) => {
     req.method === "GET"
   ) {
     const courseId = parts[3];
-    const file = `course-${courseId}-rooms.json`;
+    const file = `courses/course-${courseId}-rooms.json`;
     return serveFile(res, file, "application/json");
   }
 
@@ -192,7 +192,7 @@ const server = http.createServer(async (req, res) => {
     const name = parts.join("-");
     // try common names
     const mapping = {
-      "rooms-list.json": "rooms-list.json",
+      "rooms-list.json": "rooms/rooms-list.json",
     };
     if (mapping[name]) {
       return serveFile(res, mapping[name], "application/json");

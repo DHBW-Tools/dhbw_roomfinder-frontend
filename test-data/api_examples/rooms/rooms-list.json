@@ -1,0 +1,452 @@
+{
+  "total": 60,
+  "limit": 50,
+  "offset": 0,
+  "rooms": [
+    {
+      "id": "A201",
+      "block": "A",
+      "floor": 2,
+      "number": 1,
+      "free_now": true,
+      "next_busy_until": null
+    },
+    {
+      "id": "A202",
+      "block": "A",
+      "floor": 2,
+      "number": 2,
+      "free_now": false,
+      "next_busy_until": "2025-11-03T11:30:00+01:00"
+    },
+    {
+      "id": "A203",
+      "block": "A",
+      "floor": 2,
+      "number": 3,
+      "free_now": true,
+      "next_busy_until": null
+    },
+    {
+      "id": "A204",
+      "block": "A",
+      "floor": 2,
+      "number": 4,
+      "free_now": false,
+      "next_busy_until": "2025-11-03T14:00:00+01:00"
+    },
+    {
+      "id": "A205",
+      "block": "A",
+      "floor": 2,
+      "number": 5,
+      "free_now": true,
+      "next_busy_until": null
+    },
+    {
+      "id": "A206",
+      "block": "A",
+      "floor": 2,
+      "number": 6,
+      "free_now": false,
+      "next_busy_until": "2025-11-03T10:00:00+01:00"
+    },
+    {
+      "id": "A207",
+      "block": "A",
+      "floor": 2,
+      "number": 7,
+      "free_now": true,
+      "next_busy_until": null
+    },
+    {
+      "id": "A208",
+      "block": "A",
+      "floor": 2,
+      "number": 8,
+      "free_now": true,
+      "next_busy_until": null
+    },
+    {
+      "id": "A209",
+      "block": "A",
+      "floor": 2,
+      "number": 9,
+      "free_now": false,
+      "next_busy_until": "2025-11-03T13:30:00+01:00"
+    },
+    {
+      "id": "A210",
+      "block": "A",
+      "floor": 2,
+      "number": 10,
+      "free_now": true,
+      "next_busy_until": null
+    },
+    {
+      "id": "A244",
+      "block": "A",
+      "floor": 2,
+      "number": 44,
+      "free_now": true,
+      "next_busy_until": null
+    },
+    {
+      "id": "A245",
+      "block": "A",
+      "floor": 2,
+      "number": 45,
+      "free_now": false,
+      "next_busy_until": "2025-11-03T15:30:00+01:00"
+    },
+    {
+      "id": "A246",
+      "block": "A",
+      "floor": 2,
+      "number": 46,
+      "free_now": true,
+      "next_busy_until": null
+    },
+
+    {
+      "id": "B101",
+      "block": "B",
+      "floor": 1,
+      "number": 1,
+      "free_now": false,
+      "next_busy_until": "2025-10-31T12:30:00+01:00"
+    },
+    {
+      "id": "B102",
+      "block": "B",
+      "floor": 1,
+      "number": 2,
+      "free_now": true,
+      "next_busy_until": null
+    },
+    {
+      "id": "B103",
+      "block": "B",
+      "floor": 1,
+      "number": 3,
+      "free_now": true,
+      "next_busy_until": null
+    },
+    {
+      "id": "B104",
+      "block": "B",
+      "floor": 1,
+      "number": 4,
+      "free_now": false,
+      "next_busy_until": "2025-11-03T09:45:00+01:00"
+    },
+    {
+      "id": "B105",
+      "block": "B",
+      "floor": 1,
+      "number": 5,
+      "free_now": true,
+      "next_busy_until": null
+    },
+    {
+      "id": "B106",
+      "block": "B",
+      "floor": 1,
+      "number": 6,
+      "free_now": false,
+      "next_busy_until": "2025-11-03T11:15:00+01:00"
+    },
+    {
+      "id": "B107",
+      "block": "B",
+      "floor": 1,
+      "number": 7,
+      "free_now": true,
+      "next_busy_until": null
+    },
+    {
+      "id": "B108",
+      "block": "B",
+      "floor": 1,
+      "number": 8,
+      "free_now": true,
+      "next_busy_until": null
+    },
+    {
+      "id": "B201",
+      "block": "B",
+      "floor": 2,
+      "number": 1,
+      "free_now": false,
+      "next_busy_until": "2025-11-03T14:30:00+01:00"
+    },
+    {
+      "id": "B202",
+      "block": "B",
+      "floor": 2,
+      "number": 2,
+      "free_now": true,
+      "next_busy_until": null
+    },
+
+    {
+      "id": "C301",
+      "block": "C",
+      "floor": 3,
+      "number": 1,
+      "free_now": true,
+      "next_busy_until": null
+    },
+    {
+      "id": "C302",
+      "block": "C",
+      "floor": 3,
+      "number": 2,
+      "free_now": false,
+      "next_busy_until": "2025-11-03T13:15:00+01:00"
+    },
+    {
+      "id": "C303",
+      "block": "C",
+      "floor": 3,
+      "number": 3,
+      "free_now": true,
+      "next_busy_until": null
+    },
+    {
+      "id": "C304",
+      "block": "C",
+      "floor": 3,
+      "number": 4,
+      "free_now": false,
+      "next_busy_until": "2025-11-03T15:00:00+01:00"
+    },
+    {
+      "id": "C305",
+      "block": "C",
+      "floor": 3,
+      "number": 5,
+      "free_now": true,
+      "next_busy_until": null
+    },
+    {
+      "id": "C306",
+      "block": "C",
+      "floor": 3,
+      "number": 6,
+      "free_now": false,
+      "next_busy_until": "2025-11-03T10:15:00+01:00"
+    },
+    {
+      "id": "C307",
+      "block": "C",
+      "floor": 3,
+      "number": 7,
+      "free_now": true,
+      "next_busy_until": null
+    },
+    {
+      "id": "C308",
+      "block": "C",
+      "floor": 3,
+      "number": 8,
+      "free_now": true,
+      "next_busy_until": null
+    },
+
+    {
+      "id": "D110",
+      "block": "D",
+      "floor": 1,
+      "number": 10,
+      "free_now": true,
+      "next_busy_until": null
+    },
+    {
+      "id": "D111",
+      "block": "D",
+      "floor": 1,
+      "number": 11,
+      "free_now": true,
+      "next_busy_until": null
+    },
+    {
+      "id": "D112",
+      "block": "D",
+      "floor": 1,
+      "number": 12,
+      "free_now": false,
+      "next_busy_until": "2025-11-03T10:30:00+01:00"
+    },
+    {
+      "id": "D113",
+      "block": "D",
+      "floor": 1,
+      "number": 13,
+      "free_now": true,
+      "next_busy_until": null
+    },
+    {
+      "id": "D114",
+      "block": "D",
+      "floor": 1,
+      "number": 14,
+      "free_now": false,
+      "next_busy_until": "2025-11-03T12:45:00+01:00"
+    },
+    {
+      "id": "D115",
+      "block": "D",
+      "floor": 1,
+      "number": 15,
+      "free_now": true,
+      "next_busy_until": null
+    },
+    {
+      "id": "D116",
+      "block": "D",
+      "floor": 1,
+      "number": 16,
+      "free_now": true,
+      "next_busy_until": null
+    },
+    {
+      "id": "D210",
+      "block": "D",
+      "floor": 2,
+      "number": 10,
+      "free_now": false,
+      "next_busy_until": "2025-11-03T11:45:00+01:00"
+    },
+    {
+      "id": "D211",
+      "block": "D",
+      "floor": 2,
+      "number": 11,
+      "free_now": true,
+      "next_busy_until": null
+    },
+
+    {
+      "id": "E210",
+      "block": "E",
+      "floor": 2,
+      "number": 10,
+      "free_now": true,
+      "next_busy_until": null
+    },
+    {
+      "id": "E211",
+      "block": "E",
+      "floor": 2,
+      "number": 11,
+      "free_now": false,
+      "next_busy_until": "2025-11-03T12:00:00+01:00"
+    },
+    {
+      "id": "E212",
+      "block": "E",
+      "floor": 2,
+      "number": 12,
+      "free_now": true,
+      "next_busy_until": null
+    },
+    {
+      "id": "E213",
+      "block": "E",
+      "floor": 2,
+      "number": 13,
+      "free_now": false,
+      "next_busy_until": "2025-11-03T14:15:00+01:00"
+    },
+    {
+      "id": "E214",
+      "block": "E",
+      "floor": 2,
+      "number": 14,
+      "free_now": true,
+      "next_busy_until": null
+    },
+    {
+      "id": "E215",
+      "block": "E",
+      "floor": 2,
+      "number": 15,
+      "free_now": true,
+      "next_busy_until": null
+    },
+    {
+      "id": "E216",
+      "block": "E",
+      "floor": 2,
+      "number": 16,
+      "free_now": false,
+      "next_busy_until": "2025-11-03T09:30:00+01:00"
+    },
+
+    {
+      "id": "F001",
+      "block": "F",
+      "floor": 0,
+      "number": 1,
+      "free_now": true,
+      "next_busy_until": null
+    },
+    {
+      "id": "F002",
+      "block": "F",
+      "floor": 0,
+      "number": 2,
+      "free_now": false,
+      "next_busy_until": "2025-11-03T16:00:00+01:00"
+    },
+    {
+      "id": "F003",
+      "block": "F",
+      "floor": 0,
+      "number": 3,
+      "free_now": true,
+      "next_busy_until": null
+    },
+    {
+      "id": "F004",
+      "block": "F",
+      "floor": 0,
+      "number": 4,
+      "free_now": false,
+      "next_busy_until": "2025-11-03T13:00:00+01:00"
+    },
+    {
+      "id": "F005",
+      "block": "F",
+      "floor": 0,
+      "number": 5,
+      "free_now": true,
+      "next_busy_until": null
+    },
+    {
+      "id": "F006",
+      "block": "F",
+      "floor": 0,
+      "number": 6,
+      "free_now": true,
+      "next_busy_until": null
+    },
+    {
+      "id": "F101",
+      "block": "F",
+      "floor": 1,
+      "number": 1,
+      "free_now": false,
+      "next_busy_until": "2025-11-03T10:45:00+01:00"
+    },
+    {
+      "id": "F102",
+      "block": "F",
+      "floor": 1,
+      "number": 2,
+      "free_now": true,
+      "next_busy_until": null
+    }
+  ]
+}

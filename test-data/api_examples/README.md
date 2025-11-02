@@ -1,27 +1,32 @@
-# API Example Data for DHBW Roomfinder
+# API Test Data Examples
 
-This folder contains example input/response files that follow the `DHBW_RF_BASIC_API.md` contract.
+This directory contains example JSON and iCalendar files for testing the DHBW Room Finder API endpoints. The data is organized into subdirectories for easier navigation:
 
-Files:
+## Directory Structure
 
-- `rooms-list.json` — example response for `GET /api/v1/rooms`.
-- `room-A244.json` — example response for `GET /api/v1/rooms/{roomId}` with schedule.
-- `room-A244-free.json` — example response for `GET /api/v1/rooms/{roomId}/free`.
-- `rooms-nearest.json` — example response for `GET /api/v1/rooms/nearest`.
-- `courses-list.json` — example response for `GET /api/v1/courses`.
-- `course-KA001-rooms.json` — example response for `GET /api/v1/courses/{courseId}/rooms`.
-- `room-A244-calendar.ics` — example iCalendar file for a room.
-- `refresh-request.json` — example request body for `POST /api/v1/refresh`.
-- `refresh-response.json` — example response for `POST /api/v1/refresh`.
-- `status.json` — example response for `GET /api/v1/status`.
-- `metrics.json` — example metrics in JSON form.
+```
+api_examples/
+├── rooms/           # Room-related endpoints
+│   ├── rooms-list.json
+│   ├── rooms-nearest.json
+│   ├── room-{id}.json
+│   ├── room-{id}-free.json
+│   └── room-{id}-calendar.ics
+├── courses/         # Course-related endpoints
+│   ├── courses-list.json
+│   └── course-{id}-rooms.json
+├── system/          # System and admin endpoints
+│   ├── status.json
+│   ├── metrics.json
+│   ├── refresh-request.json
+│   └── refresh-response.json
+└── README.md
+```
 
-How to use
+## Coverage
 
-- Use these files for local development, mocks, or unit tests.
-- To serve them locally for manual testing, copy them into your mock server or import them in tests.
+The example data covers buildings A through F with 60 total rooms across multiple floors. Representative detail files are provided for rooms in each building (A244, B101, C301, D110, E210, F001).
 
-Notes
+## Usage
 
-- Dates are ISO8601; adjust to your timezone as needed.
-- `room-A244-calendar.ics` is minimal; real calendars will include more properties.
+These files are served by the mock API server (`test-mock-server/server.mjs`) during development. See the mock server README for endpoint mappings and usage instructions.

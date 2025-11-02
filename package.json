@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "api:dev": "PORT=9090 node ./test-mock-server/server.js"
+    "api:dev": "PORT=9090 node ./test-mock-server/server.mjs",
+    "mock:dev": "PORT=9090 node ./test-mock-server/server.mjs"
   },
   "dependencies": {
     "@radix-ui/react-dropdown-menu": "^2.1.16",

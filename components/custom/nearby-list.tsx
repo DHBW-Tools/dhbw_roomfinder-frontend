@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Room from "./room-card";
+import Room from "@/components/custom/room-card";
 
 type NearestRoom = {
   id: string;
@@ -30,8 +30,14 @@ export default function NearbyList({ roomId }: { roomId: string }) {
         if (!res.ok) throw new Error(`Status ${res.status}`);
         const data = await res.json();
         if (!cancelled) setRooms(data.rooms ?? []);
-      } catch (err: any) {
-        if (!cancelled) setError(err?.message ?? String(err));
+      } catch (err: unknown) {
+        if (!cancelled) {
+          if (err instanceof Error) {
+            setError(err.message);
+          } else {
+            setError(String(err));
+          }
+        }
       } finally {
         if (!cancelled) setLoading(false);
       }
